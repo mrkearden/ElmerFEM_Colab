@@ -10,9 +10,12 @@ Suitable for teaching Finite Element Method (FEM) in classes.
 Python script to batch generate velocity plot  
 Assumes paraview is installed and in the path  
 Assumes it is in the current directory with the vtu file created from Elmer  
-Could be modified do pressure or wireframe  
-or on script could do all three plots.  
+ 
 
 Run script  
-pvpython makevelocity.py  
+pvpython makevelocity.py  ! makes velovity plot  
+pvpython plots.py ! make velocity, pressure, and wire mesh  
+pvpython plotline.py 0.003 0.0 0.096  ! Plots x velocity at position 0.003 from 0.0 to 0.096 on y axis
+
+
 
